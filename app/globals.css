@@ -1,0 +1,31 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+body { background: #fff7f7; color: #111; }
+.app-container { display: grid; grid-template-rows: auto 1fr auto; min-height: 100dvh; }
+.app-header { padding: 16px 20px; background: #ffcc00; border-bottom: 4px solid #db0007; }
+.brand { font-weight: 800; font-size: 20px; }
+.sub { font-size: 12px; color: #5b0b0e; }
+.app-main { max-width: 920px; margin: 0 auto; padding: 20px; width: 100%; }
+.app-footer { padding: 10px 20px; font-size: 12px; color: #666; text-align: center; }
+
+.chat { display: grid; grid-template-rows: 1fr auto; gap: 12px; height: calc(100dvh - 160px); border-radius: 12px; border: 1px solid #eee; background: #fff; box-shadow: 0 6px 16px rgba(0,0,0,0.06); }
+.messages { overflow: auto; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.bubble { max-width: 70%; padding: 10px 12px; border-radius: 14px; line-height: 1.35; }
+.user { align-self: flex-end; background: #db0007; color: #fff; border-bottom-right-radius: 4px; }
+.assistant { align-self: flex-start; background: #f4f4f5; color: #111; border-bottom-left-radius: 4px; }
+.meta { font-size: 12px; color: #666; }
+.inputRow { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 12px; border-top: 1px solid #eee; }
+.inputRow input { padding: 12px 14px; border-radius: 10px; border: 1px solid #ddd; font-size: 16px; }
+.inputRow button { padding: 12px 16px; border-radius: 10px; border: 0; background: #ffbc0d; color: #111; font-weight: 700; cursor: pointer; }
+.inputRow button:hover { filter: brightness(0.95); }
+
+.suggestions { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 12px 8px; }
+.suggestions button { padding: 8px 10px; border-radius: 999px; border: 1px solid #eee; background: #fff; cursor: pointer; }
+.suggestions button:hover { background: #fafafa; }
+
+.card { border: 1px solid #eee; border-radius: 12px; padding: 10px; background: #fff; }
+.menuGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 8px; }
+.menuItem { display: grid; gap: 6px; }
+.price { font-weight: 700; }
+.badge { display: inline-block; font-size: 11px; padding: 2px 6px; border-radius: 999px; background: #f3f4f6; }
